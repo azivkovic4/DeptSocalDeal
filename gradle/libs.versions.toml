@@ -1,0 +1,124 @@
+[versions]
+agp = "8.10.0"
+kotlin = "2.0.21"
+coreKtx = "1.15.0"
+lifecycleRuntimeKtx = "2.8.7"
+androidx_navigation = "2.9.0"
+activityCompose = "1.10.0"
+ksp = "2.0.21-1.0.27"
+dagger = "2.56.2"
+hilt = "1.2.0"
+retrofit = "2.9.0"
+okhttp3 = "5.0.0-alpha.11"
+material_design3 = "1.4.0-alpha13"
+coil = "3.2.0"
+room = "2.7.+"
+material = "1.12.0"
+composeCompiler = "1.7.0-alpha02"
+junit = "4.13.2"
+mockk = "1.13.10"
+cash-turbine = "1.1.0"
+jupiter = "5.10.3"
+kotlinx = "1.9.0"
+material3Android = "1.3.1"
+pagination-runtime = "3.3.5"
+room-pagination = "2.6.1"
+glide = "1.0.0-beta01"
+
+[libraries]
+#AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+lifecycle-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+
+#Room
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+# Navigation
+androidx_nav_runtime = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "androidx_navigation" }
+androidx_nav_compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx_navigation" }
+androidx_nav_ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidx_navigation" }
+androidx_material3_navigation_suite = { module = "androidx.compose.material3:material3-adaptive-navigation-suite", version.ref = "material_design3" }
+
+# Hilt
+dagger = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
+dagger_compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger" }
+dagger_common = { module = "androidx.hilt:hilt-common", version.ref = "hilt" }
+dagger_navigation_compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt" }
+
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt" }
+#Retrofit
+squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+squareup-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+#Material
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+#Coil
+coil = { module = "io.coil-kt.coil3:coil", version.ref = "coil" }
+coil_network = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
+coil_network_cacheControl = { module = "io.coil-kt.coil3:coil-network-cache-control", version.ref = "coil" }
+coil_svg = { module = "io.coil-kt.coil3:coil-svg", version.ref = "coil" }
+coil_compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
+coil_gif = { module = "io.coil-kt.coil3:coil-gif", version.ref = "coil" }
+
+#Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+cash-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "cash-turbine" }
+jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "jupiter" }
+jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "jupiter" }
+jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "jupiter" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+kotlinx-test-coroutine = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx" }
+
+#Pagination
+androidx-paging-runtime = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "pagination-runtime" }
+androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "pagination-runtime" }
+androidx-room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room-pagination" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "composeCompiler" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt-plugin = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
+
+[bundles]
+room = ["room-runtime", "room-ktx"]
+jupiter-test = [
+    "jupiter-api",
+    "jupiter-engine",
+    "jupiter-params"
+]
+coil = [
+    "coil",
+    "coil_network",
+    "coil_network_cacheControl",
+    "coil_svg",
+    "coil_compose",
+    "coil_gif"
+]
+
+navigation = [
+    "androidx_nav_runtime",
+    "androidx_nav_compose",
+    "androidx_nav_ui",
+    "androidx_material3_navigation_suite"
+]
+
+dagger = [
+    "dagger",
+    "dagger_common",
+    "dagger_navigation_compose",
+    "androidx-hilt-compiler"
+]

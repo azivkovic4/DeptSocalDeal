@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DeptSocalDeal</string>
+    <string name="no_internet_available">No internet available please check connection</string>
+    <string name="preferred_currency">Choose your preferred currency</string>
+    <string name="eur">EUR</string>
+    <string name="usd">USD</string>
+</resources>
